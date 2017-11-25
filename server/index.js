@@ -32,7 +32,7 @@ app.get('/storys', function(req, res){
   story.get(req, res)
 })
 
-app.delete('/storys/:story ', function(req, res){
+app.delete('/storys/:story', function(req, res){
   //the delete will include the story id in the request.params
   story.delete(req, res)
 })

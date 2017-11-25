@@ -1,0 +1,19 @@
+{
+  "name": "mernstory",
+  "version": "1.0.0",
+  "description": "## Technologies   1. [Express](https://expressjs.com/) / [Node](https://nodejs.org/en/n)   1. [React](https://facebook.github.io/react/) / [Redux](http://redux.js.org/)   1. [Material-UI](http://www.material-ui.com/#/)   1. [Webpack](https://webpack.github.io/) / [Babel](https://babeljs.io/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clarkbaum/mernStory.git"
+  },
+  "author": "nathan clark baumgartner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clarkbaum/mernStory/issues"
+  },
+  "homepage": "https://github.com/Clarkbaum/mernStory#readme"
+}

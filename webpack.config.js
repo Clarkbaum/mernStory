@@ -6,7 +6,7 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 });
 
 module.exports = {
-  entry: __dirname + '/client/index.js',
+  entry: __dirname + '/client/router.js',
   module:{
     loaders: [
       {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import 'whatwg-fetch';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
@@ -11,8 +12,16 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      data: []
+      data: [],
+      char1: 'char1',
+      char2: 'char2',
+      char3: 'char3'
+
     };
+  }
+
+  handleStart() {
+    console.log('handleStart clicked')
   }
   
 
@@ -20,8 +29,29 @@ class App extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          
-        TEST here plz work
+          <TextField
+            name='char1'
+            floatingLabelText='char1'
+            fullWidth={true}
+            onChange={(e, value) => this.textChange('char1', value)}
+          />
+          <TextField
+            name='char2'
+            floatingLabelText='char2'
+            fullWidth={true}
+            onChange={(e, value) => this.textChange('char2', value)}
+          />
+          <TextField
+            name='char3'
+            floatingLabelText='char3'
+            fullWidth={true}
+            onChange={(e, value) => this.textChange('char3', value)}
+          />
+
+          <FlatButton 
+            label="Start Story" 
+            onTouchTap={this.handleStart.bind(this)}
+          />
         </div>
       </MuiThemeProvider>
     )

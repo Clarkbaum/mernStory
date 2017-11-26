@@ -10,6 +10,8 @@ import Page2 from './components/page2.jsx';
 import Page3 from './components/page3.jsx';
 import Page4 from './components/page4.jsx';
 import Page5 from './components/page5.jsx';
+import Distract from './components/distract.jsx';
+import Security from './components/security.jsx';
 
 class ReactRouter extends React.Component {
   constructor(props) {
@@ -31,6 +33,8 @@ class ReactRouter extends React.Component {
             <Route path="/page3" component={Page3} />
             <Route path="/page4" component={Page4} />
             <Route path="/page5" component={Page5} />
+            <Route path="/distract" component={Distract} />
+            <Route path="/security" component={Security} />
           </Switch>
         </Router>
       </div>
@@ -53,7 +57,7 @@ char1 - main character
 go to the grocery store (page1)
   continue shopping (page3)
     chicken (page4)
-      call security (2)
+      call security (security)(2)
         run after the man
           END
         check up on the women (1)

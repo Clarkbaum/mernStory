@@ -8,7 +8,7 @@ import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
-class Page5 extends React.Component {
+class Security extends React.Component {
   constructor(props) {
     super(props);
 
@@ -17,7 +17,7 @@ class Page5 extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide on some lasagna. Its time for something new, you eat chicken way way too much. You walk on over to the lasagna to browse their options. While in the lasagna isle you hear some noise from the chicken isle'
+      body: 'You dicide to call security since thats one big fella. You yell out for some help which spooks the man. He decides to bolt for the door.'
     };
   }
 
@@ -25,17 +25,17 @@ class Page5 extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Lasagna </h2>
+          <h2> Call Security </h2>
           {this.state.body}
           <br/>
-          <Link to={{ pathname: '/page1', state: this.state }}>
+          <Link to={{ pathname: '/run', state: this.state }}>
             <FlatButton 
-              label="Continue Shopping Then Leave Store" 
+              label="Run After The Man" 
             />
           </Link>
-          <Link to={{ pathname: '/page5', state: this.state }}>
+          <Link to={{ pathname: '/check', state: this.state }}>
             <FlatButton 
-              label="Look What All The Noise Is About" 
+              label="Check Up On The Women" 
             />
           </Link>
         </div>
@@ -44,4 +44,4 @@ class Page5 extends React.Component {
   }
 }
 
-export default Page5;
+export default Security;

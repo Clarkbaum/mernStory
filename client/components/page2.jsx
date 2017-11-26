@@ -14,6 +14,9 @@ class Page2 extends React.Component {
 
     this.state = {
       data: [],
+      char1: props.location.state.char1,
+      char2: props.location.state.char2,
+      char3: props.location.state.char3,
       body: 'You decide it would be better to just go home and go shopping later instead. There is no doubt you were going to miss something anyway'
     };
   }

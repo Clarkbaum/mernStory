@@ -13,11 +13,11 @@ class Continue extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide to just continue shopping. Not your problem'
+      body: 'You decide to just continue shopping. Not your problem ',
+      story: props.location.state.story + 'You decide to just continue shopping. Not your problem '
     };
   }
 
@@ -27,8 +27,13 @@ class Continue extends React.Component {
         <div>
           <h2> Continue Shopping </h2>
           {this.state.body}
-          <h4> END </h4>
           <br/>
+          <h4> END </h4>
+          <Link to={{ pathname: '/finalstory', state: this.state }}>
+            <FlatButton 
+              label="Final Story" 
+            />
+          </Link>
         </div>
       </MuiThemeProvider>
     )

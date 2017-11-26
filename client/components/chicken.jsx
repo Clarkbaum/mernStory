@@ -13,11 +13,11 @@ class Chicken extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide on chicken. Trying new stuff can be scary. Besides, you can whip up your favoite chicken dish in 13 minutes flat since you get so much practice. You reach the chicken isle and pick up some chicken. Then you see two people struggling with each other close buy. One is a petite lady and the other is a man twice your size'
+      body: 'You decide on chicken. Trying new stuff can be scary. Besides, you can whip up your favoite chicken dish in 13 minutes flat since you get so much practice. You reach the chicken isle and pick up some chicken. Then you see two people struggling with each other close buy. One is a petite lady and the other is a man twice your size ', 
+      story: props.location.state.story + 'You decide on chicken. Trying new stuff can be scary. Besides, you can whip up your favoite chicken dish in 13 minutes flat since you get so much practice. You reach the chicken isle and pick up some chicken. Then you see two people struggling with each other close buy. One is a petite lady and the other is a man twice your size '
     };
   }
 

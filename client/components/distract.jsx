@@ -13,11 +13,11 @@ class Distract extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide to hurl the closet thing you can grab at the man\'s head. You pick it up a can of soup and throw it as hard as you can. You miss horribly but it was enough to spook the man, he decides to try and bolt for the door with a group of secruity guards hot on his trail.'
+      body: 'You decide to hurl the closet thing you can grab at the man\'s head. You pick it up a can of soup and throw it as hard as you can. You miss horribly but it was enough to spook the man, he decides to try and bolt for the door with a group of secruity guards hot on his trail. ',
+      story: props.location.state.story + 'You decide to hurl the closet thing you can grab at the man\'s head. You pick it up a can of soup and throw it as hard as you can. You miss horribly but it was enough to spook the man, he decides to try and bolt for the door with a group of secruity guards hot on his trail. '
     };
   }
 

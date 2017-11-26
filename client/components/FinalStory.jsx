@@ -8,7 +8,7 @@ import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
-class Who extends React.Component {
+class FinalStory extends React.Component {
   constructor(props) {
     super(props);
 
@@ -16,8 +16,8 @@ class Who extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: props.location.state.char2 + ' thinks about your question. "not sure" she replies. ',
-      story: props.location.state.story + props.location.state.char2 + ' thinks about your question. "not sure" she replies. '
+      body: 'You decide it would be better to just go home and go shopping later instead. There is no doubt you were going to miss something anyway ',
+      story: props.location.state.story
     };
   }
 
@@ -25,19 +25,14 @@ class Who extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Who Was That Guy? </h2>
-          {this.state.body}
+          <h2> Final Story </h2>
+          {this.state.story}
           <br/>
           <h4> END </h4>
-          <Link to={{ pathname: '/finalstory', state: this.state }}>
-            <FlatButton 
-              label="Final Story" 
-            />
-          </Link>
         </div>
       </MuiThemeProvider>
     )
   }
 }
 
-export default Who;
+export default FinalStory;

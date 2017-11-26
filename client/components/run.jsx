@@ -13,11 +13,11 @@ class Run extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide to run after the man. He had a head start on you and manages to barrel through anyone in his way. He exists the store and turns a corner before you get out. You lost him. Good thing too, you had no plan on what you would have done even if you caught him.'
+      body: 'You decide to run after the man. He had a head start on you and manages to barrel through anyone in his way. He exists the store and turns a corner before you get out. You lost him. Good thing too, you had no plan on what you would have done even if you caught him. ',
+      story: props.location.state.story + 'You decide to run after the man. He had a head start on you and manages to barrel through anyone in his way. He exists the store and turns a corner before you get out. You lost him. Good thing too, you had no plan on what you would have done even if you caught him. '
     };
   }
 
@@ -29,6 +29,11 @@ class Run extends React.Component {
           {this.state.body}
           <br/>
           <h4> END </h4>
+          <Link to={{ pathname: '/finalstory', state: this.state }}>
+            <FlatButton 
+              label="Final Story" 
+            />
+          </Link>
         </div>
       </MuiThemeProvider>
     )

@@ -13,11 +13,11 @@ class Leave extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide it would be better to just go home and go shopping later instead. There is no doubt you were going to miss something anyway'
+      body: 'You decide it would be better to just go home and go shopping later instead. There is no doubt you were going to miss something anyway ',
+      story: props.location.state.story + 'You decide it would be better to just go home and go shopping later instead. There is no doubt you were going to miss something anyway '
     };
   }
 
@@ -27,8 +27,13 @@ class Leave extends React.Component {
         <div>
           <h2> Leave Store </h2>
           {this.state.body}
-          <h4> END </h4>
           <br/>
+          <h4> END </h4>
+          <Link to={{ pathname: '/finalstory', state: this.state }}>
+            <FlatButton 
+              label="Final Story" 
+            />
+          </Link>
         </div>
       </MuiThemeProvider>
     )

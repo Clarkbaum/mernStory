@@ -13,11 +13,11 @@ class Security extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You dicide to call security since thats one big fella. You yell out for some help which spooks the man. He decides to bolt for the door.'
+      body: 'You dicide to call security since thats one big fella. You yell out for some help which spooks the man. He decides to bolt for the door. ',
+      story: props.location.state.story + 'You dicide to call security since thats one big fella. You yell out for some help which spooks the man. He decides to bolt for the door. '
     };
   }
 

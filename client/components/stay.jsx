@@ -13,11 +13,11 @@ class Stay extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide to stay, you have a decent idea what you need anyway. First on your imaginary list is Chicken... but then again you had chicken 2 days ago. Maybe time for something different? Maybe Lasagna?'
+      body: 'You decide to stay, you have a decent idea what you need anyway. First on your imaginary list is Chicken... but then again you had chicken 2 days ago. Maybe time for something different? Maybe Lasagna? ',
+      story: props.location.state.story + 'You decide to stay, you have a decent idea what you need anyway. First on your imaginary list is Chicken... but then again you had chicken 2 days ago. Maybe time for something different? Maybe Lasagna? '
     };
   }
 

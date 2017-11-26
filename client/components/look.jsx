@@ -13,11 +13,11 @@ class Look extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide you are really curious and move towards the chicken isle. When you get there you see two people struggling with each other close buy. One is a petite lady and the other is a man twice your size'
+      body: 'You decide you are really curious and move towards the chicken isle. When you get there you see two people struggling with each other close buy. One is a petite lady and the other is a man twice your size ',
+      story: props.location.state.story + 'You decide you are really curious and move towards the chicken isle. When you get there you see two people struggling with each other close buy. One is a petite lady and the other is a man twice your size '
     };
   }
 

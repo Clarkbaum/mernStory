@@ -13,11 +13,11 @@ class Lasagna extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide on some lasagna. Its time for something new, you eat chicken way too much. You walk on over to the lasagna to browse their options. While in the lasagna isle you hear some noise from the chicken isle'
+      body: 'You decide on some lasagna. Its time for something new, you eat chicken way too much. You walk on over to the lasagna to browse their options. While in the lasagna isle you hear some noise from the chicken isle ',
+      story: props.location.state.story + 'You decide on some lasagna. Its time for something new, you eat chicken way too much. You walk on over to the lasagna to browse their options. While in the lasagna isle you hear some noise from the chicken isle '
     };
   }
 

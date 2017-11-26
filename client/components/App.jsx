@@ -17,11 +17,9 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       char1: 'char1',
       char2: 'char2',
       char3: 'char3'
-
     };
   }
 

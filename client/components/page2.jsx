@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, browserHistory, IndexRoute, Switch } from 'react-router-dom';
+
 import 'whatwg-fetch';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
@@ -20,6 +22,7 @@ class Page2 extends React.Component {
       <MuiThemeProvider>
         <div>
           page2 test
+          <Link to='/page1'> page1</Link>
         </div>
       </MuiThemeProvider>
     )

@@ -17,9 +17,9 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      char1: 'char1',
-      char2: 'char2',
-      char3: 'char3'
+      char1: 'MainCharacter',
+      char2: 'Lady',
+      char3: 'RoomMate'
     };
   }
 
@@ -46,19 +46,19 @@ class App extends React.Component {
           <br/>
           <TextField
             name='char1'
-            floatingLabelText='char1'
+            floatingLabelText='Your Character'
             fullWidth={true}
             onChange={(e, value) => this.textChange('char1', value)}
           />
           <TextField
             name='char2'
-            floatingLabelText='char2'
+            floatingLabelText='Female Name'
             fullWidth={true}
             onChange={(e, value) => this.textChange('char2', value)}
           />
           <TextField
             name='char3'
-            floatingLabelText='char3'
+            floatingLabelText='Male Name'
             fullWidth={true}
             onChange={(e, value) => this.textChange('char3', value)}
           />

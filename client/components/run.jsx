@@ -16,6 +16,7 @@ class Run extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
+      styles: props.location.state.styles,
       body: 'You decide to run after the man. He had a head start on you and manages to barrel through anyone in his way. He exists the store and turns a corner before you get out. You lost him. Good thing too, you had no plan on what you would have done even if you caught him. ',
       story: props.location.state.story + 'You decide to run after the man. He had a head start on you and manages to barrel through anyone in his way. He exists the store and turns a corner before you get out. You lost him. Good thing too, you had no plan on what you would have done even if you caught him. '
     };
@@ -25,7 +26,9 @@ class Run extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Run After The Man </h2>
+          <h2 style={this.state.styles.header}>
+            <span style={this.state.styles.topTitle}> Run After The Man </span>
+          </h2>
           {this.state.body}
           <br/>
           <h4> END </h4>

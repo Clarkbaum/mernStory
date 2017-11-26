@@ -16,6 +16,7 @@ class Who extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
+      styles: props.location.state.styles,
       body: props.location.state.char2 + ' thinks about your question. "not sure" she replies. ',
       story: props.location.state.story + props.location.state.char2 + ' thinks about your question. "not sure" she replies. '
     };
@@ -25,7 +26,9 @@ class Who extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Who Was That Guy? </h2>
+          <h2 style={this.state.styles.header}>
+            <span style={this.state.styles.topTitle}> Who Was That Guy? </span>
+          </h2>
           {this.state.body}
           <br/>
           <h4> END </h4>

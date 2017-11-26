@@ -16,6 +16,7 @@ class Leave extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
+      styles: props.location.state.styles,
       body: 'You decide it would be better to just go home and go shopping later instead. There is no doubt you were going to miss something anyway ',
       story: props.location.state.story + 'You decide it would be better to just go home and go shopping later instead. There is no doubt you were going to miss something anyway '
     };

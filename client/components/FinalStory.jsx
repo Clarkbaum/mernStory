@@ -16,6 +16,7 @@ class FinalStory extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
+      styles: props.location.state.styles,
       body: 'You decide it would be better to just go home and go shopping later instead. There is no doubt you were going to miss something anyway ',
       story: props.location.state.story
     };
@@ -25,7 +26,9 @@ class FinalStory extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Final Story </h2>
+          <h2 style={this.state.styles.header}>
+            <span style={this.state.styles.topTitle}> Final Story </span>
+          </h2>
           {this.state.story}
           <br/>
           <h4> END </h4>

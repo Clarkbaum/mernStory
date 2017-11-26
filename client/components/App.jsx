@@ -19,7 +19,8 @@ class App extends React.Component {
     this.state = {
       char1: 'MainCharacter',
       char2: 'Lady',
-      char3: 'RoomMate'
+      char3: 'RoomMate',
+      styles: styles
     };
   }
 
@@ -77,6 +78,24 @@ class App extends React.Component {
         </div>
       </MuiThemeProvider>
     )
+  }
+}
+
+const styles = {
+  header: {
+    backgroundColor: '#2d2d2d',
+    height: 180,
+    paddingTop: 100,
+    margin: 0,
+    textAlign: 'center',
+    marginBottom: 20
+  },
+  topTitle: {
+    fontSize: 34,
+    fontWeight: 600,
+    fontFamily: 'proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
+    color: '#61dafb',
+    margin: 0
   }
 }
 

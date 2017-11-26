@@ -16,6 +16,7 @@ class Security extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
+      styles: props.location.state.styles,
       body: 'You dicide to call security since thats one big fella. You yell out for some help which spooks the man. He decides to bolt for the door. ',
       story: props.location.state.story + 'You dicide to call security since thats one big fella. You yell out for some help which spooks the man. He decides to bolt for the door. '
     };
@@ -25,7 +26,9 @@ class Security extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Call Security </h2>
+          <h2 style={this.state.styles.header}>
+            <span style={this.state.styles.topTitle}> Call Security </span>
+          </h2>
           {this.state.body}
           <br/>
           <Link to={{ pathname: '/run', state: this.state }}>

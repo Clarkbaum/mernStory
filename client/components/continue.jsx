@@ -16,6 +16,7 @@ class Continue extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
+      styles: props.location.state.styles,
       body: 'You decide to just continue shopping. Not your problem ',
       story: props.location.state.story + 'You decide to just continue shopping. Not your problem '
     };
@@ -25,7 +26,9 @@ class Continue extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Continue Shopping </h2>
+          <h2 style={this.state.styles.header}>
+            <span style={this.state.styles.topTitle}> Continue Shopping </span>
+          </h2>
           {this.state.body}
           <br/>
           <h4> END </h4>

@@ -16,6 +16,7 @@ class Drink extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
+      styles: props.location.state.styles,
       body: 'You decide to seize the moment of looking like a hero to get a date. "No problem at all I am glad I could help" you say. "Would you like to go grab a drink? There\'s a coffee place around the corner. Also my name is ' + props.location.state.char1 + '." She smiles "that sounds like a wonderful idea." ',
       story: props.location.state.story + 'You decide to seize the moment of looking like a hero to get a date. "No problem at all I am glad I could help" you say. "Would you like to go grab a drink? There\'s a coffee place around the corner. Also my name is ' + props.location.state.char1 + '." She smiles "that sounds like a wonderful idea." '
     };
@@ -25,7 +26,9 @@ class Drink extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Whould You Like To Get A Drink? </h2>
+          <h2 style={this.state.styles.header}>
+            <span style={this.state.styles.topTitle}> Whould You Like To Get A Drink? </span>
+          </h2>
           {this.state.body}
           <br/>
           <h4> You Got Yourself A Date! </h4>

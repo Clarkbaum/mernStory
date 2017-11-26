@@ -1,9 +1,3 @@
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-  template: __dirname +'/client/index.html',
-  filename: 'index.html',
-  inject: 'body'
-});
 
 module.exports = {
   entry: __dirname + '/client/router.js',
@@ -23,12 +17,17 @@ module.exports = {
         options: {
           limit: 25000
         }
+      },
+      {
+        { 
+          test: /\.css$/, 
+          loader: "style-loader!css-loader" 
+        },
       }
     ]
   },
   output: {
     filename: 'bundled.js',
     path: __dirname + '/build'
-  },
-  plugins: [HTMLWebpackPluginConfig]
+  }
 };

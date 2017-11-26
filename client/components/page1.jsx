@@ -11,6 +11,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 class Page1 extends React.Component {
   constructor(props) {
     super(props);
+    console.log("props.location.state", props.location.state)
 
     this.state = {
       data: []

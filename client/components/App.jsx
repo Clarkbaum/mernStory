@@ -28,12 +28,24 @@ class App extends React.Component {
   handleStart() {
     console.log('handleStart clicked')
   }
+
+  textChange(type, value) {
+    if(type === 'char1'){
+      this.setState({char1: value})
+    } else if (type === 'char2') {
+      this.setState({char2: value})
+    } else if (type === 'char3') {
+      this.setState({char3: value})
+    }
+  }
   
 
   render() {
     return (
       <MuiThemeProvider>
         <div>
+          <h1>MERN Choose-Your-Own-Adventure Story </h1>
+          <br/>
           <TextField
             name='char1'
             floatingLabelText='char1'
@@ -52,7 +64,7 @@ class App extends React.Component {
             fullWidth={true}
             onChange={(e, value) => this.textChange('char3', value)}
           />
-          <Link to='/page2'>
+          <Link to={{ pathname: '/page1', state: this.state }}>
             <FlatButton 
               label="Start Story" 
               onTouchTap={this.handleStart.bind(this)}

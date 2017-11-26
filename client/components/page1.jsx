@@ -11,7 +11,6 @@ import RaisedButton from 'material-ui/RaisedButton';
 class Page1 extends React.Component {
   constructor(props) {
     super(props);
-    console.log("props.location.state", props.location.state)
 
     this.state = {
       data: [],
@@ -23,17 +22,18 @@ class Page1 extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
+          <h2> Arrived at the grocery store </h2>
           {this.state.body}
-          <br />
+          <br/>
           <Link to={{ pathname: '/page2', state: this.state }}>
             <FlatButton 
               label="Leave Store" 
             />
           </Link>
           <Link to={{ pathname: '/page3', state: this.state }}>
-          <FlatButton 
-            label="Guess What You Needed" 
-          />
+            <FlatButton 
+              label="Guess What You Needed" 
+            />
           </Link>
         </div>
       </MuiThemeProvider>

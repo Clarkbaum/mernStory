@@ -8,13 +8,13 @@ import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
-class Page3 extends React.Component {
+class Page4 extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       data: [],
-      body: 'You decide to stay, you have a decent idea what you need anyway. First on your imaginary list is Chicken... but then again you had chicken 2 days ago. Maybe time for something different? maybe Lasagna?'
+      body: 'You decide on chicken. Trying new stuff can be scary. Besides, you can whip up your favoite chicken dish in 13 minutes flat since you get so much practice. You reach the chicken isle and pick up some chicken. Then you see two people struggling with each other close buy. One is a petite lady and the other is a man twice your size'
     };
   }
 
@@ -22,17 +22,17 @@ class Page3 extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Guess What You Needed </h2>
+          <h2> Chicken </h2>
           {this.state.body}
           <br/>
           <Link to={{ pathname: '/page4', state: this.state }}>
             <FlatButton 
-              label="Chicken" 
+              label="Call Security" 
             />
           </Link>
           <Link to={{ pathname: '/page5', state: this.state }}>
             <FlatButton 
-              label="Lasagna" 
+              label="Try To Distract The Man" 
             />
           </Link>
         </div>
@@ -41,4 +41,4 @@ class Page3 extends React.Component {
   }
 }
 
-export default Page3;
+export default Page4;

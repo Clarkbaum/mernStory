@@ -8,6 +8,8 @@ import App from './components/App.jsx';
 import Page1 from './components/page1.jsx';
 import Page2 from './components/page2.jsx';
 import Page3 from './components/page3.jsx';
+import Page4 from './components/page4.jsx';
+import Page5 from './components/page5.jsx';
 
 class ReactRouter extends React.Component {
   constructor(props) {
@@ -27,6 +29,8 @@ class ReactRouter extends React.Component {
             <Route path="/page1" component={Page1} />
             <Route path="/page2" component={Page2} />
             <Route path="/page3" component={Page3} />
+            <Route path="/page4" component={Page4} />
+            <Route path="/page5" component={Page5} />
           </Switch>
         </Router>
       </div>
@@ -48,7 +52,7 @@ char1 - main character
 
 go to the grocery store (page1)
   continue shopping (page3)
-    chicken 
+    chicken (page4)
       call security (2)
         run after the man
           END
@@ -59,7 +63,7 @@ go to the grocery store (page1)
             you get a date END
       try to distract the man (3)
         check up on the women (1)
-    lasagna
+    lasagna (page5)
       look what all the noise is about
         call security (2)
         try to distract the man (3)

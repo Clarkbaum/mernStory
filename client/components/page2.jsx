@@ -13,7 +13,8 @@ class Page2 extends React.Component {
     super(props);
 
     this.state = {
-      data: []
+      data: [],
+      body: 'You decide it would be better to just go home and go shopping later instead. There is no doubt you were going to miss something anyway'
     };
   }
 
@@ -21,8 +22,10 @@ class Page2 extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          page2 test
-          <Link to='/page1'> page1</Link>
+          <h2> Leave Store </h2>
+          {this.state.body}
+          <h4> END </h4>
+          <br/>
         </div>
       </MuiThemeProvider>
     )

@@ -17,7 +17,7 @@ class Drink extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide to seize the moment of looking like a hero to get a date. "No problem at all I am glad I could help" you say. "Would you like to go grab a drink? There\'s a coffee place around the corner. Also my name is ' + this.state.char1 + '." She smiles "that sounds like a wonderful idea."'
+      body: 'You decide to seize the moment of looking like a hero to get a date. "No problem at all I am glad I could help" you say. "Would you like to go grab a drink? There\'s a coffee place around the corner. Also my name is ' + props.location.state.char1 + '." She smiles "that sounds like a wonderful idea."'
     };
   }
 

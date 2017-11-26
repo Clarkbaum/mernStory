@@ -17,7 +17,7 @@ class Page3 extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide to stay, you have a decent idea what you need anyway. First on your imaginary list is Chicken... but then again you had chicken 2 days ago. Maybe time for something different? maybe Lasagna?'
+      body: 'You decide to stay, you have a decent idea what you need anyway. First on your imaginary list is Chicken... but then again you had chicken 2 days ago. Maybe time for something different? Maybe Lasagna?'
     };
   }
 

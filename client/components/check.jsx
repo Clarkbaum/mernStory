@@ -17,7 +17,7 @@ class Check extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide to see if the women is ok first. You kneel down and ask "hey ma\'am are you ok?" She looks up at you and says "thank you so much, he was trying to steal my purse. I am ' + this.state.char2 + ' by the way.'
+      body: 'You decide to see if the women is ok first. You kneel down and ask "hey ma\'am are you ok?" She looks up at you and says "thank you so much, he was trying to steal my purse. I am ' + props.location.state.char2 + ' by the way."'
     };
   }
 

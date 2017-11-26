@@ -17,7 +17,7 @@ class Who extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: this.state.char2 + ' thinks about your question. "not sure" she replies.'
+      body: props.location.state.char2 + ' thinks about your question. "not sure" she replies.'
     };
   }
 

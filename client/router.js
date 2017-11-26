@@ -5,11 +5,11 @@ import ReactDOM from 'react-dom'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import App from './components/App.jsx';
-import Page1 from './components/page1.jsx';
-import Page2 from './components/page2.jsx';
-import Page3 from './components/page3.jsx';
-import Page4 from './components/page4.jsx';
-import Page5 from './components/page5.jsx';
+import Arrived from './components/arrived.jsx';
+import Leave from './components/leave.jsx';
+import Stay from './components/stay.jsx';
+import Chicken from './components/chicken.jsx';
+import Lasagna from './components/lasagna.jsx';
 import Distract from './components/distract.jsx';
 import Security from './components/security.jsx';
 import Check from './components/check.jsx';
@@ -34,11 +34,11 @@ class ReactRouter extends React.Component {
         <Router history={browserHistory}>
           <Switch>
             <Route exact path="/" component={App} />
-            <Route path="/page1" component={Page1} />
-            <Route path="/page2" component={Page2} />
-            <Route path="/page3" component={Page3} />
-            <Route path="/page4" component={Page4} />
-            <Route path="/page5" component={Page5} />
+            <Route path="/arrived" component={Arrived} />
+            <Route path="/leave" component={Leave} />
+            <Route path="/stay" component={Stay} />
+            <Route path="/chicken" component={Chicken} />
+            <Route path="/lasagna" component={Lasagna} />
             <Route path="/distract" component={Distract} />
             <Route path="/security" component={Security} />
             <Route path="/check" component={Check} />
@@ -67,9 +67,9 @@ numbers represent the same path
 char1 - main character
 char2 - lady character
 
-go to the grocery store (page1)
-  continue shopping (page3)
-    chicken (page4)
+go to the grocery store (arrived)
+  continue shopping (stay)
+    chicken (chicken)
       call security (security)(2)
         run after the man (run)
           END
@@ -80,13 +80,13 @@ go to the grocery store (page1)
             you get a date END
       try to distract the man (3)
         check up on the women (1)
-    lasagna (page5)
+    lasagna (lasagna)
       look what all the noise is about
         call security (2)
         try to distract the man (3)
       continue shopping
         END
-  leave (page2)
+  leave (leave)
     END
 */
 

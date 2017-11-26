@@ -64,7 +64,13 @@ class App extends React.Component {
             fullWidth={true}
             onChange={(e, value) => this.textChange('char3', value)}
           />
-          <Link to={{ pathname: '/page1', state: this.state }}>
+          <TextField
+            name='email'
+            floatingLabelText='email'
+            fullWidth={true}
+            onChange={(e, value) => this.textChange('email', value)}
+          />
+          <Link to={{ pathname: '/arrived', state: this.state }}>
             <FlatButton 
               label="Start Story" 
               onTouchTap={this.handleStart.bind(this)}

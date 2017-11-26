@@ -8,7 +8,7 @@ import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
-class Page1 extends React.Component {
+class Chicken extends React.Component {
   constructor(props) {
     super(props);
 
@@ -17,7 +17,7 @@ class Page1 extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'Your name is ' + props.location.state.char1 + '. It is been a long day but you still have one last chore to do. You have to go grocery shopping. You arrive and wonder over to the produce deparment. You stand in front of the tomataos and stick your hand in your pocket only to realize you forgot your grocery list. You let out a large sigh, wondeirng if you should just go home or make a guess what you needed knowing full well you will undoubtedly have to come back soon to get what you inevitably forgot.'
+      body: 'You decide on chicken. Trying new stuff can be scary. Besides, you can whip up your favoite chicken dish in 13 minutes flat since you get so much practice. You reach the chicken isle and pick up some chicken. Then you see two people struggling with each other close buy. One is a petite lady and the other is a man twice your size'
     };
   }
 
@@ -25,17 +25,17 @@ class Page1 extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Arrived at the grocery store </h2>
+          <h2> Chicken </h2>
           {this.state.body}
           <br/>
-          <Link to={{ pathname: '/page2', state: this.state }}>
+          <Link to={{ pathname: '/security', state: this.state }}>
             <FlatButton 
-              label="Leave Store" 
+              label="Call Security" 
             />
           </Link>
-          <Link to={{ pathname: '/page3', state: this.state }}>
+          <Link to={{ pathname: '/distract', state: this.state }}>
             <FlatButton 
-              label="Guess What You Needed" 
+              label="Try To Distract The Man" 
             />
           </Link>
         </div>
@@ -44,4 +44,4 @@ class Page1 extends React.Component {
   }
 }
 
-export default Page1;
+export default Chicken;

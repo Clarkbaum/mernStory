@@ -1,5 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router';
+//import { Link } from 'react-router';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 import 'whatwg-fetch';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
@@ -47,11 +52,12 @@ class App extends React.Component {
             fullWidth={true}
             onChange={(e, value) => this.textChange('char3', value)}
           />
-
-          <FlatButton 
-            label="Start Story" 
-            onTouchTap={this.handleStart.bind(this)}
-          />
+          <Link to='/page1'>
+            <FlatButton 
+              label="Start Story" 
+              onTouchTap={this.handleStart.bind(this)}
+            />
+          </Link>
         </div>
       </MuiThemeProvider>
     )

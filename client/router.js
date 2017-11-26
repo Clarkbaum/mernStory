@@ -1,11 +1,23 @@
 import React from 'react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import App from './components/App';
-import Page1 from './components/page1';
-import Page2 from './components/page2';
-import Page3 from './components/page3';
 
-class Router extends React.Component {
+//import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  browserHistory,
+  IndexRoute,
+  Switch
+} from 'react-router-dom';
+import ReactDOM from 'react-dom'
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+import App from './components/App.jsx';
+import Page1 from './components/page1.jsx';
+import Page2 from './components/page2.jsx';
+import Page3 from './components/page3.jsx';
+
+class ReactRouter extends React.Component {
   constructor(props) {
     super(props);
 
@@ -17,18 +29,21 @@ class Router extends React.Component {
   render() {
     return (
       <div>
-        <Router history={history}>
-          <Route path="/" component={App} >
-            <Route path="/app" component={App} />
+        <Router history={browserHistory}>
+          <Switch>
+            <Route exact path="/" component={App} />
             <Route path="/page1" component={Page1} />
             <Route path="/page2" component={Page2} />
             <Route path="/page3" component={Page3} />
-            <Route path="*" component={App} />
-          </Route>
+          </Switch>
         </Router>
       </div>
     )
   }
 }
 
-export default Router;
+export default ReactRouter;
+
+injectTapEventPlugin();
+
+ReactDOM.render( <ReactRouter />, document.getElementById('app'));

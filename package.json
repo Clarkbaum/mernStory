@@ -28,7 +28,8 @@
     "mongoose": "^4.9.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-router": "^4.2.0",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.2.2",
     "react-tap-event-plugin": "^2.0.1",
     "style-loader": "^0.17.0",
     "url-loader": "^0.5.8"

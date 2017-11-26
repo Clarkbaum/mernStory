@@ -1,14 +1,6 @@
 import React from 'react';
 
-//import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  browserHistory,
-  IndexRoute,
-  Switch
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, browserHistory, IndexRoute, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -47,3 +39,4 @@ export default ReactRouter;
 injectTapEventPlugin();
 
 ReactDOM.render( <ReactRouter />, document.getElementById('app'));
+

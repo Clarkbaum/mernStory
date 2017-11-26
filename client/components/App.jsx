@@ -52,7 +52,7 @@ class App extends React.Component {
             fullWidth={true}
             onChange={(e, value) => this.textChange('char3', value)}
           />
-          <Link to='/page1'>
+          <Link to='/page2'>
             <FlatButton 
               label="Start Story" 
               onTouchTap={this.handleStart.bind(this)}

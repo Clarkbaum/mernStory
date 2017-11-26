@@ -17,7 +17,7 @@ class Page1 extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'your name is ' + this.state.char1 + '. It is been a long day but you still have one last chore to do. You have to go grocery shopping. You arrive and wonder over to the produce deparment. You stand in front of the tomataos and stick your hand in your pocket only to realize you forgot your grocery list. You let out a large sigh, wondeirng if you should just go home or make a guess what you needed knowing full well you will undoubtedly have to come back soon to get what you inevitably forgot.'
+      body: 'Your name is ' + this.state.char1 + '. It is been a long day but you still have one last chore to do. You have to go grocery shopping. You arrive and wonder over to the produce deparment. You stand in front of the tomataos and stick your hand in your pocket only to realize you forgot your grocery list. You let out a large sigh, wondeirng if you should just go home or make a guess what you needed knowing full well you will undoubtedly have to come back soon to get what you inevitably forgot.'
     };
   }
 

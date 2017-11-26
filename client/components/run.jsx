@@ -17,7 +17,7 @@ class Run extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: ''
+      body: 'You decide to run after the man. He had a head start on you and manages to barrel through anyone in his way. He exists the store and turns a corner before you get out. You lost him. Good thing too, you had no plan on what you would have done even if you caught him.'
     };
   }
 
@@ -28,16 +28,7 @@ class Run extends React.Component {
           <h2> Run After The Man </h2>
           {this.state.body}
           <br/>
-          <Link to={{ pathname: '/security', state: this.state }}>
-            <FlatButton 
-              label="Call Security" 
-            />
-          </Link>
-          <Link to={{ pathname: '/distract', state: this.state }}>
-            <FlatButton 
-              label="Try To Distract The Man" 
-            />
-          </Link>
+          <h4> END </h4>
         </div>
       </MuiThemeProvider>
     )

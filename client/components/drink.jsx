@@ -8,7 +8,7 @@ import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
-class Page5 extends React.Component {
+class Drink extends React.Component {
   constructor(props) {
     super(props);
 
@@ -17,7 +17,7 @@ class Page5 extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: 'You decide on some lasagna. Its time for something new, you eat chicken way way too much. You walk on over to the lasagna to browse their options. While in the lasagna isle you hear some noise from the chicken isle'
+      body: 'You decide to seize the moment of looking like a hero to get a date. "No problem at all I am glad I could help" you say. "Would you like to go grab a drink? There\'s a coffee place around the corner. Also my name is ' + this.state.char1 + '." She smiles "that sounds like a wonderful idea."'
     };
   }
 
@@ -25,23 +25,15 @@ class Page5 extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Lasagna </h2>
+          <h2> Whould You Like To Get A Drink? </h2>
           {this.state.body}
           <br/>
-          <Link to={{ pathname: '/continue', state: this.state }}>
-            <FlatButton 
-              label="Continue Shopping" 
-            />
-          </Link>
-          <Link to={{ pathname: '/look', state: this.state }}>
-            <FlatButton 
-              label="Look What All The Noise Is About" 
-            />
-          </Link>
+          <h4> You Got Yourself A Date! </h4>
+          <h4> END </h4>
         </div>
       </MuiThemeProvider>
     )
   }
 }
 
-export default Page5;
+export default Drink;

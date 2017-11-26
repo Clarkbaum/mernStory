@@ -17,7 +17,7 @@ class Check extends React.Component {
       char1: props.location.state.char1,
       char2: props.location.state.char2,
       char3: props.location.state.char3,
-      body: ''
+      body: 'You decide to see if the women is ok first. You kneel down and ask "hey ma\'am are you ok?" She looks up at you and says "thank you so much, he was trying to steal my purse. I am ' + this.state.char2 + ' by the way.'
     };
   }
 
@@ -28,14 +28,14 @@ class Check extends React.Component {
           <h2> Check Up On The Women </h2>
           {this.state.body}
           <br/>
-          <Link to={{ pathname: '/security', state: this.state }}>
+          <Link to={{ pathname: '/who', state: this.state }}>
             <FlatButton 
-              label="Call Security" 
+              label="'Who Was That Guy?'" 
             />
           </Link>
-          <Link to={{ pathname: '/distract', state: this.state }}>
+          <Link to={{ pathname: '/drink', state: this.state }}>
             <FlatButton 
-              label="Try To Distract The Man" 
+              label="Ask If She Would Like A Drink" 
             />
           </Link>
         </div>

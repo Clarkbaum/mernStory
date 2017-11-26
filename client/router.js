@@ -12,6 +12,12 @@ import Page4 from './components/page4.jsx';
 import Page5 from './components/page5.jsx';
 import Distract from './components/distract.jsx';
 import Security from './components/security.jsx';
+import Check from './components/check.jsx';
+import Continue from './components/Continue.jsx';
+import Run from './components/run.jsx';
+import Who from './components/who.jsx';
+import Drink from './components/drink.jsx';
+import Look from './components/look.jsx';
 
 class ReactRouter extends React.Component {
   constructor(props) {
@@ -35,6 +41,12 @@ class ReactRouter extends React.Component {
             <Route path="/page5" component={Page5} />
             <Route path="/distract" component={Distract} />
             <Route path="/security" component={Security} />
+            <Route path="/check" component={Check} />
+            <Route path="/continue" component={Continue} />
+            <Route path="/run" component={Run} />
+            <Route path="/who" component={Who} />
+            <Route path="/drink" component={Drink} />
+            <Route path="/look" component={Look} />
           </Switch>
         </Router>
       </div>
@@ -53,12 +65,13 @@ ReactDOM.render( <ReactRouter />, document.getElementById('app'));
 story flow
 numbers represent the same path
 char1 - main character
+char2 - lady character
 
 go to the grocery store (page1)
   continue shopping (page3)
     chicken (page4)
       call security (security)(2)
-        run after the man
+        run after the man (run)
           END
         check up on the women (1)
           "who was that guy"

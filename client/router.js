@@ -30,8 +30,9 @@ class ReactRouter extends React.Component {
   }
 
   render() {
+    document.body.style.backgroundColor = '#e9ebee';
     return (
-      <div>
+      <div >
         <Router history={browserHistory}>
           <Switch>
             <Route exact path="/" component={App} />

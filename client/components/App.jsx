@@ -97,7 +97,7 @@ const styles = {
     marginBottom: 20
   },
   topTitle: {
-    fontSize: 34,
+    fontSize: 40,
     fontWeight: 600,
     fontFamily: 'proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
     color: '#61dafb',
@@ -105,7 +105,11 @@ const styles = {
   },
   story: {
     padding: 10,
-    marginBottom: 20
+    marginBottom: 20,
+    backgroundColor: 'white'
+  },
+  body: {
+    backgroundColor: '#e9ebee'
   }
 }
 

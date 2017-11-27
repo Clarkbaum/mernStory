@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, browserHistory, IndexRoute, Switch } from 'react-router-dom';
 import { Email, Item, Span, A, renderEmail } from 'react-html-email'
 
-import 'whatwg-fetch';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';

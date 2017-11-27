@@ -1,11 +1,6 @@
 import React from 'react';
-//import { Link } from 'react-router';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
-import 'whatwg-fetch';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
@@ -23,10 +18,6 @@ class App extends React.Component {
       char3: 'RoomMate',
       styles: styles
     };
-  }
-
-  handleStart() {
-    console.log('handleStart clicked')
   }
 
   textChange(type, value) {
@@ -76,7 +67,6 @@ class App extends React.Component {
           <Link to={{ pathname: '/arrived', state: this.state }}>
             <FlatButton 
               label="Start Story" 
-              onTouchTap={this.handleStart.bind(this)}
             />
           </Link>
         </div>

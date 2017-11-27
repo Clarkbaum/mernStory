@@ -59,7 +59,7 @@ class App extends React.Component {
             />
             <TextField
               name='email'
-              floatingLabelText='email'
+              floatingLabelText='Email'
               fullWidth={true}
               onChange={(e, value) => this.textChange('email', value)}
             />

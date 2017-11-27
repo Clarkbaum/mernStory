@@ -7,6 +7,7 @@ import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
 
 class Leave extends React.Component {
   constructor(props) {
@@ -26,8 +27,12 @@ class Leave extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Leave Store </h2>
-          {this.state.body}
+          <h2 style={this.state.styles.header}>
+            <span style={this.state.styles.topTitle}> Leave Store </span>
+          </h2>
+          <Paper style={this.state.styles.story} zDepth={2}>
+            {this.state.body}
+          </Paper>
           <br/>
           <h4> END </h4>
           <Link to={{ pathname: '/finalstory', state: this.state }}>

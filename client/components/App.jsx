@@ -11,6 +11,7 @@ import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
 
 class App extends React.Component {
   constructor(props) {
@@ -43,32 +44,36 @@ class App extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h1>MERN Choose-Your-Own-Adventure Story </h1>
+          <h2 style={this.state.styles.header}>
+            <span style={this.state.styles.topTitle}>Choose-Your-Own-Adventure Story </span>
+          </h2>
           <br/>
-          <TextField
-            name='char1'
-            floatingLabelText='Your Character'
-            fullWidth={true}
-            onChange={(e, value) => this.textChange('char1', value)}
-          />
-          <TextField
-            name='char2'
-            floatingLabelText='Female Name'
-            fullWidth={true}
-            onChange={(e, value) => this.textChange('char2', value)}
-          />
-          <TextField
-            name='char3'
-            floatingLabelText='Male Name'
-            fullWidth={true}
-            onChange={(e, value) => this.textChange('char3', value)}
-          />
-          <TextField
-            name='email'
-            floatingLabelText='email'
-            fullWidth={true}
-            onChange={(e, value) => this.textChange('email', value)}
-          />
+          <Paper style={this.state.styles.story} zDepth={2}>
+            <TextField
+              name='char1'
+              floatingLabelText='Your Character'
+              fullWidth={true}
+              onChange={(e, value) => this.textChange('char1', value)}
+            />
+            <TextField
+              name='char2'
+              floatingLabelText='Female Name'
+              fullWidth={true}
+              onChange={(e, value) => this.textChange('char2', value)}
+            />
+            <TextField
+              name='char3'
+              floatingLabelText='Male Name'
+              fullWidth={true}
+              onChange={(e, value) => this.textChange('char3', value)}
+            />
+            <TextField
+              name='email'
+              floatingLabelText='email'
+              fullWidth={true}
+              onChange={(e, value) => this.textChange('email', value)}
+            />
+          </Paper>
           <Link to={{ pathname: '/arrived', state: this.state }}>
             <FlatButton 
               label="Start Story" 
@@ -81,6 +86,7 @@ class App extends React.Component {
   }
 }
 
+//I pass styles to each component using props so I just have them in one place
 const styles = {
   header: {
     backgroundColor: '#2d2d2d',
@@ -96,6 +102,10 @@ const styles = {
     fontFamily: 'proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
     color: '#61dafb',
     margin: 0
+  },
+  story: {
+    padding: 10,
+    marginBottom: 20
   }
 }
 

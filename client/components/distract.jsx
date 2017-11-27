@@ -7,6 +7,7 @@ import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
 
 class Distract extends React.Component {
   constructor(props) {
@@ -29,8 +30,9 @@ class Distract extends React.Component {
           <h2 style={this.state.styles.header}>
             <span style={this.state.styles.topTitle}> Try To Distract The Man </span>
           </h2>
-          <h2> Try To Distract The Man </h2>
-          {this.state.body}
+          <Paper style={this.state.styles.story} zDepth={2}>
+            {this.state.body}
+          </Paper>
           <br/>
           <Link to={{ pathname: '/check', state: this.state }}>
             <FlatButton 

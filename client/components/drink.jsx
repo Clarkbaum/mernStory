@@ -7,6 +7,7 @@ import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
 
 class Drink extends React.Component {
   constructor(props) {
@@ -29,7 +30,9 @@ class Drink extends React.Component {
           <h2 style={this.state.styles.header}>
             <span style={this.state.styles.topTitle}> Whould You Like To Get A Drink? </span>
           </h2>
-          {this.state.body}
+          <Paper style={this.state.styles.story} zDepth={2}>
+            {this.state.body}
+          </Paper>
           <br/>
           <h4> You Got Yourself A Date! </h4>
           <h4> END </h4>

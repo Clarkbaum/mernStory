@@ -7,6 +7,7 @@ import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
 
 class Lasagna extends React.Component {
   constructor(props) {
@@ -26,8 +27,12 @@ class Lasagna extends React.Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h2> Lasagna </h2>
-          {this.state.body}
+          <h2 style={this.state.styles.header}>
+            <span style={this.state.styles.topTitle}> Lasagna </span>
+          </h2>
+          <Paper style={this.state.styles.story} zDepth={2}>
+            {this.state.body}
+          </Paper>
           <br/>
           <Link to={{ pathname: '/continue', state: this.state }}>
             <FlatButton 

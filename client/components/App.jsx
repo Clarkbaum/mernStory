@@ -38,7 +38,6 @@ class App extends React.Component {
       this.setState({char3: value})
     }
   }
-  
 
   render() {
     return (

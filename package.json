@@ -28,6 +28,7 @@
     "mongoose": "^4.9.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-html-email": "^3.0.0",
     "react-router": "^4.0.0",
     "react-router-dom": "^4.2.2",
     "react-tap-event-plugin": "^2.0.1",

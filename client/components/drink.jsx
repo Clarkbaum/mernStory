@@ -23,6 +23,20 @@ class Drink extends React.Component {
     };
   }
 
+  addStory() {
+    fetch('http://localhost:8000/storys', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        story: this.state.story,
+      })
+    })
+    .then(console.log("story added"))
+    .catch(err => console.log("error posting story", err))
+  }
+
   render() {
     return (
       <MuiThemeProvider>
@@ -39,6 +53,7 @@ class Drink extends React.Component {
           <Link to={{ pathname: '/finalstory', state: this.state }}>
             <FlatButton 
               label="Final Story" 
+              onTouchTap={this.addStory.bind(this)}
             />
           </Link>
         </div>
